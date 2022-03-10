@@ -7,15 +7,17 @@ import ListLink from '../ListLink/ListLink';
 class Home extends React.Component {
   static propTypes = {
     title: PropTypes.node,
-    subtitle: PropTypes.node,
     lists: PropTypes.array,
   }
   render() {
-    const { title, subtitle, lists } = this.props;
+    const { title, lists } = this.props;
     return (
       <main className={styles.component}>
-        <h1 className={styles.title}>{title}</h1>
-        <h2 className={styles.subtitle}>{subtitle}</h2>
+        <section className={styles.splash}>
+          <div className={styles.splash_inner}>
+            <h1 className={styles.title}>{title}</h1>
+          </div>
+        </section>
         {lists.map(listData => (
           <ListLink key={listData.id} {...listData} />
         ))}

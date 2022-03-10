@@ -1,7 +1,27 @@
-@import '../../styles/settings.scss';
+@import "../../styles/settings.scss";
 
 .component {
   padding: $base-size;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.splash {
+  height: 60vh;
+  position: relative;
+  background-image: url("https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.splash_inner {
+  position: absolute;
+  width: 90%;
+  top: 45%;
+  left: 45%;
+  transform: translate(-45%, -45%);
 }
 
 .title {
@@ -20,5 +40,5 @@
 }
 
 .title + .subtitle {
-  margin-top: (- $base-size * 3);
+  margin-top: (-$base-size * 3);
 }
