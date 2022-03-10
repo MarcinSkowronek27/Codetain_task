@@ -1,1 +1,3 @@
-https://react-lessons-first.herokuapp.com/
+## Advise
+
+use Node version 14
