@@ -8,9 +8,11 @@ class Home extends React.Component {
   static propTypes = {
     title: PropTypes.node,
     lists: PropTypes.array,
+    subtitle: PropTypes.node,
   }
+
   render() {
-    const { title, lists } = this.props;
+    const { title, lists, subtitle } = this.props;
     return (
       <main className={styles.component}>
         <section className={styles.splash}>
@@ -18,9 +20,12 @@ class Home extends React.Component {
             <h1 className={styles.title}>{title}</h1>
           </div>
         </section>
-        {lists.map(listData => (
-          <ListLink key={listData.id} {...listData} />
-        ))}
+        <h1 className={styles.subtitle}>{subtitle}</h1>
+        <section className={styles.lists}>
+          {lists.map(listData => (
+            <ListLink key={listData.id} {...listData} />
+          ))}
+        </section>
       </main>
     );
   }

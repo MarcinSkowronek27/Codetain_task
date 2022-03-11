@@ -1,16 +1,22 @@
-@import '../../styles/settings.scss';
-
-.link {
-  text-decoration: none;
-  color: $color-dark;
-}
+@import "../../styles/settings.scss";
 
 .component {
   background: $color-light;
+  color: $color-dark;
   display: flex;
+  margin: 0 6px;
   margin-bottom: $base-size;
   border-radius: $radius;
-  box-shadow: 0 ($base-size / 4) 0 rgba(0,0,0,0.3);
+  box-shadow: 0 ($base-size / 4) 0 rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-out;
+  display: inline-block;
+  max-width: 310px;
+}
+
+.component:hover {
+  transform: translate(0, -8px);
+  background: rgba(255, 255, 255, 0.3);
+  color: $color-light;
 }
 
 .text {
@@ -23,13 +29,10 @@
   margin-bottom: ($base-size * 2);
 }
 
-.image {
-  height: 100px;
-  position: relative;
-
-  img {
-    object-fit: cover;
+@media (max-width: 989px) {
+  .component {
+    max-width: none;
+    // border: solid yellow;
     width: 100%;
-    height: 100%;
   }
 }

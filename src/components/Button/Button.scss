@@ -19,9 +19,9 @@
   }
 
   &.danger {
-    background: $color-warning;
+    background: $color-red;
     &:hover {
-      background: darken($color-warning, 5%);
+      background: darken($color-red, 5%);
     }
   }
 }

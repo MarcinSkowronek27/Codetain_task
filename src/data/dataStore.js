@@ -6,60 +6,7 @@ export const settings = {
 
 export const pageContents = {
   title: 'Marcin Skowronek',
-  subtitle: 'A simple to-do app, with lists, columns and cards',
-};
-
-export const listData = {
-  title: 'Things to do <sup>soon!</sup>',
-  description: 'Interesting things I want to check out!',
-  image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
-  columns: [
-    {
-      key: 0,
-      title: 'Books',
-      icon: 'book',
-      cards: [
-        {
-          key: 0,
-          title: 'This Is Going to Hurt',
-        },
-        {
-          key: 1,
-          title: 'Interpreter of Maladies',
-        },
-      ],
-    },
-    {
-      key: 1,
-      title: 'Movies',
-      icon: 'film',
-      cards: [
-        {
-          key: 0,
-          title: 'Harry Potter',
-        },
-        {
-          key: 1,
-          title: 'Star Wars',
-        },
-      ],
-    },
-    {
-      key: 2,
-      title: 'Games',
-      icon: 'gamepad',
-      cards: [
-        {
-          key: 0,
-          title: 'The Witcher',
-        },
-        {
-          key: 1,
-          title: 'Skyrim',
-        },
-      ],
-    },
-  ],
+  subtitle: 'Hobby',
 };
 
 export const aboutData = {
@@ -71,55 +18,24 @@ export const aboutData = {
 const lists = [
   {
     id: 'list-1',
-    title: 'Things to do <sup>soon!</sup>',
-    description: 'Interesting things I want to check out!',
-    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+    title: 'I play the guitar',
+    description: 'One of my skills is playing the guitar, which I am improving all the time. I use an acoustic guitar with a warm tone and a good grip. Would you like to play? Feel free to join me!',
   },
   {
     id: 'list-2',
-    title: 'Take care about grandma',
-    description: 'Buy some food and drinks',
-    image: 'https://cdn.pixabay.com/photo/2013/07/12/18/39/grandmother-153657_960_720.png',
+    title: 'I walk in the mountains',
+    description: 'I love exploring the nature, and seeing mountains especially moves me.',
   },
   {
     id: 'list-3',
-    title: 'Clean computer table',
-    description: 'Clean my room and take out the trash!',
-    image: 'https://cdn.pixabay.com/photo/2016/11/18/13/03/apple-1834328_960_720.jpg',
-  },
-];
-
-const columns = [
-  {
-    id: 'column-1',
-    listId: 'list-1',
-    title: 'Books',
-    icon: 'book',
-  },
-  {
-    id: 'column-2',
-    listId: 'list-1',
-    title: 'Movies',
-    icon: 'film',
-  },
-  {
-    id: 'column-3',
-    listId: 'list-1',
-    title: 'Games',
-    icon: 'gamepad',
-  },
-  {
-    id: 'column-4',
-    listId: 'list-2',
-    title: 'Strange column',
-    icon: 'question',
+    title: 'I stroke cats',
+    description: 'I own two Siberian cats that I groom and most importantly stroke every day.',
   },
 ];
 
 const initialStoreData = {
   app: { ...pageContents },
   lists: [...lists],
-  columns: [...columns],
 };
 
 export default initialStoreData;
