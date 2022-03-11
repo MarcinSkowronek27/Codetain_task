@@ -1,0 +1,9 @@
+@import "../../styles/settings.scss";
+
+.page_footer {
+  background: darken($color-dark, 3%);
+  padding: ($base-size * 1.5) 0;
+  text-align: center;
+  margin-top: 96px;
+  // margin-bottom: 0;
+}

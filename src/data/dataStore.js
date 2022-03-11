@@ -2,6 +2,7 @@ export const settings = {
   logo: 'crow',
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
+  footerInfo: 'Marcin 2022 @All rights reserved',
 };
 
 export const pageContents = {

@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from '../Container/Container';
 import Hero from '../Hero/Hero';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { aboutData } from '../../data/dataStore';
 
 const Info = () => (
@@ -12,8 +12,8 @@ const Info = () => (
   </Container>
 );
 
-Info.propTypes = {
-  image: PropTypes.node,
-};
+// Info.propTypes = {
+//   image: PropTypes.node,
+// };
 
 export default Info;
