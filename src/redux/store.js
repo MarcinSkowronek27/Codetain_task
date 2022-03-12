@@ -9,7 +9,7 @@ const initialState = {
   app: initialStoreData.app,
   lists: initialStoreData.lists,
   columns: initialStoreData.columns,
-  cards: initialStoreData.cards,
+  photos: initialStoreData.photos,
   // searchString: '',
 };
 

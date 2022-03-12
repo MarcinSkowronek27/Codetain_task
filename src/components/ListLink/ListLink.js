@@ -12,9 +12,6 @@ const ListLink = ({ title, description }) => (
         {ReactHtmlParser(description)}
       </div>
     </div>
-    {/* <div className={styles.image}>
-        <img src={image} />
-      </div> */}
   </section>
 );
 
