@@ -8,6 +8,7 @@ import MainLayout from '../MainLayout/MainLayout';
 import styles from './App.scss';
 import { AnimatedSwitch } from 'react-router-transition';
 import { parse } from 'react-router-transition';
+import Film from '../Film/FilmContainer';
 
 export default function App() {
 
@@ -36,6 +37,7 @@ export default function App() {
         >
           <Route exact path='/' component={Home} />
           <Route exact path='/about_me' component={About_me} />
+          <Route exact path='/movie/:id' component={Film}/>
         </AnimatedSwitch>
       </MainLayout>
     </BrowserRouter>

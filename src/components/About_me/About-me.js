@@ -6,6 +6,7 @@ import Hero from '../Hero/Hero';
 // import PropTypes from 'prop-types';
 import { aboutData } from '../../data/dataStore';
 import Gallery from '../Gallery/GalleryContainer';
+import FilmLink from '../FilmLink/FilmLink';
 
 
 export default function About_me() {
@@ -44,16 +45,13 @@ export default function About_me() {
           <li>Jira</li>
         </ul>
       </section>
-      <section>
+      <section className={styles.films}>
         <h2>My favourite movies:</h2>
         {parsedResponse === null ?
-          null :
+          <div>Loading movies list...</div> :
           <div>
             {parsedResponse.results.map((film, index) => (
-              // console.log(film),
-              <ul key={film.episode_id}>
-                <li >{film.title}</li>
-              </ul>
+              <FilmLink key={index} id={(index+1)} {...film}/>
             )
             )}
           </div>

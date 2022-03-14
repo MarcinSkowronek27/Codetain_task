@@ -1,7 +1,6 @@
 export const settings = {
   logo: 'crow',
-  defaultListDescription: '<p>This page is about me!!!</p>',
-  defaultColumnIcon: 'list-alt',
+  defaultFilmDescription: '<p>This page is about me!!!</p>',
   footerInfo: 'Marcin 2022 @All rights reserved',
 };
 

@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from './ListLink.scss';
+import styles from './ListHobby.scss';
 import PropTypes from 'prop-types';
 import { settings } from '../../data/dataStore';
 import ReactHtmlParser from 'react-html-parser';
 
-const ListLink = ({ title, description }) => (
+const ListHobby = ({ title, description }) => (
   <section className={styles.component}>
     <div className={styles.text}>
       <h2 className={styles.title}>{ReactHtmlParser(title)}</h2>
@@ -15,13 +15,13 @@ const ListLink = ({ title, description }) => (
   </section>
 );
 
-ListLink.propTypes = {
+ListHobby.propTypes = {
   title: PropTypes.node.isRequired,
   description: PropTypes.node,
 };
 
-ListLink.defaultProps = {
+ListHobby.defaultProps = {
   description: settings.defaultListDescription,
 };
 
-export default ListLink;
+export default ListHobby;

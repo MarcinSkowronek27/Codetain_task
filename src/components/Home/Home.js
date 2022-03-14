@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Home.scss';
 import PropTypes from 'prop-types';
-import ListLink from '../ListLink/ListLink';
+import ListHobby from '../ListHobby/ListHobby';
 // import { pageContents/*, listData*/ } from '../../data/dataStore';
 
 class Home extends React.Component {
@@ -23,7 +23,7 @@ class Home extends React.Component {
         <h1 className={styles.subtitle}>{subtitle}</h1>
         <section className={styles.lists}>
           {lists.map(listData => (
-            <ListLink key={listData.id} {...listData} />
+            <ListHobby key={listData.id} {...listData} />
           ))}
         </section>
       </main>
