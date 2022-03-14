@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
     "lint": "eslint src/",
-    "server": "http-server dist"
+    "server": "json-server --port 3131 --no-cors --delay 250 --watch src/db/app.json"
   },
   "husky": {
     "hooks": {
@@ -23,6 +23,7 @@
   "dependencies": {
     "clsx": "^1.1.1",
     "http-server": "^0.12.3",
+    "json-server": "^0.17.0",
     "prop-types": "^15.7.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",

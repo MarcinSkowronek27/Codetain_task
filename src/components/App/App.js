@@ -7,6 +7,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import MainLayout from '../MainLayout/MainLayout';
 import styles from './App.scss';
 import { AnimatedSwitch } from 'react-router-transition';
+import { parse } from 'react-router-transition';
 
 export default function App() {
 
@@ -23,7 +24,7 @@ export default function App() {
       setParseResponse(parsedResponse);
     });
   });
-  console.log(parsedResponse);
+  // console.log(parsedResponse);
   return (
     <BrowserRouter>
       <MainLayout>
