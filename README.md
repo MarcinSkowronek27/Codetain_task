@@ -1,3 +1,11 @@
+## Available Scripts
+
+In the project directory, you can run:
+
+### To run project:
+
+`npm install` and `npm start`,
+
 #### Notice
 
-use Node version 14
+Use Node version 14
