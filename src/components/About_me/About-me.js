@@ -46,7 +46,7 @@ export default function About_me() {
         </ul>
       </section>
       <section className={styles.films}>
-        <h2>My favourite movies:</h2>
+        <h2>Favourite movies:</h2>
         {parsedResponse === null ?
           <div>Loading movies list...</div> :
           <div>

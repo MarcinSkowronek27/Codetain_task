@@ -4,9 +4,7 @@ import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Container from '../Container/Container';
 
-const Film = ({ episode_id, id, title, director, producer, release_date, opening_crawl, ...props }) => {
-  // console.log(props.match.params.id);
-  // console.log(test);
+const Film = ({ id, title, director, producer, release_date, opening_crawl, ...props }) => {
 
   const url = `https://swapi.dev/api/films/${props.match.params.id}`;
 
@@ -20,7 +18,6 @@ const Film = ({ episode_id, id, title, director, producer, release_date, opening
     parseServerResponse.then(function (parsedResponse) {
       setParseResponse(parsedResponse);
     });
-    // console.log('pars', parsedResponse);
   });
 
   return (
@@ -28,9 +25,16 @@ const Film = ({ episode_id, id, title, director, producer, release_date, opening
       <section className={styles.component}>
         {parsedResponse === null ?
           <div>Wait for loading data...</div> :
-          <>
+          <><h3>Title:</h3>
             <div>{parsedResponse.title}</div>
+            <h3>Director:</h3>
             <div>{parsedResponse.director}</div>
+            <h3>Producer:</h3>
+            <div>{parsedResponse.producer}</div>
+            <h3>Release date:</h3>
+            <div>{parsedResponse.release_date}</div>
+            <h3>Opening crawl:</h3>
+            <div>{parsedResponse.opening_crawl}</div>
           </>
         }
       </section>
