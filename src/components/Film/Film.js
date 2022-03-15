@@ -24,7 +24,8 @@ const Film = ({ id, title, director, producer, release_date, opening_crawl, ...p
     <Container>
       <section className={styles.component}>
         {parsedResponse === null ?
-          <div>Wait for loading data...</div> :
+          <div id={styles.wait}>Wait for loading data...</div>
+          :
           <><h3>Title:</h3>
             <div>{parsedResponse.title}</div>
             <h3>Director:</h3>
@@ -44,8 +45,11 @@ const Film = ({ id, title, director, producer, release_date, opening_crawl, ...p
 
 Film.propTypes = {
   episode_id: PropTypes.string,
-  title: PropTypes.node.string,
-  director: PropTypes.node.string,
+  title: PropTypes.node.func,
+  director: PropTypes.node.func,
+  producer: PropTypes.node.func,
+  release_date: PropTypes.node.func,
+  opening_crawl: PropTypes.node.func,
 };
 
 export default Film;

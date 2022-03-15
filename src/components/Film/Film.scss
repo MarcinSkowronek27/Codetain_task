@@ -10,9 +10,16 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  div:last-child {
+    margin: 0 10px;
+  }
+}
+.component #wait {
+  margin-top: 12px;
 }
 
-h3, div {
+h3,
+div {
   margin: 7px 0;
 }
 

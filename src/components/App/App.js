@@ -1,28 +1,13 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
 import Home from '../Home/HomeContainer';
 import About_me from '../About_me/About-me';
 import { BrowserRouter, Route } from 'react-router-dom';
 import MainLayout from '../MainLayout/MainLayout';
 import styles from './App.scss';
 import { AnimatedSwitch } from 'react-router-transition';
-import Film from '../Film/FilmContainer';
+import Film from '../Film/Film';
 
 export default function App() {
-
-  const url = "https://swapi.dev/api/films/";
-
-  const [parsedResponse, setParseResponse] = useState(null);
-
-  useEffect(() => {
-    const request = fetch(url);
-    const parseServerResponse = request.then(function (rawResponse) {
-      return rawResponse.json();
-    });
-    parseServerResponse.then(function (parsedResponse) {
-      setParseResponse(parsedResponse);
-    });
-  });
 
   return (
     <BrowserRouter>

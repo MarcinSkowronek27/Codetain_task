@@ -15,6 +15,5 @@ Hero.propTypes = {
   image: PropTypes.node,
 };
 
-
 export default Hero;
 
