@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Film.scss';
 import { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import Container from '../Container/Container';
 
 const Film = ({ id, title, director, producer, release_date, opening_crawl, ...props }) => {
@@ -41,15 +41,6 @@ const Film = ({ id, title, director, producer, release_date, opening_crawl, ...p
       </section>
     </Container>
   )
-};
-
-Film.propTypes = {
-  episode_id: PropTypes.string,
-  title: PropTypes.node.func,
-  director: PropTypes.node.func,
-  producer: PropTypes.node.func,
-  release_date: PropTypes.node.func,
-  opening_crawl: PropTypes.node.func,
 };
 
 export default Film;
