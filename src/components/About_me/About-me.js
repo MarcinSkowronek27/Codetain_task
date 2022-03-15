@@ -60,9 +60,3 @@ export default function About_me() {
     </Container>
   );
 }
-
-// Info.propTypes = {
-//   image: PropTypes.node,
-// };
-
-// export default About_me;
